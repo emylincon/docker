@@ -124,3 +124,7 @@ docker image history <<image_name>>
 ```bash
 docker image inspect <<image_name>>
 ```
+* TO create an image tag
+```bash
+ docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+```
