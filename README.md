@@ -109,3 +109,18 @@ docker container exec -it emeka ping another
 ```bash
 docker container run --rm -it centos:7 bash
 ```
+
+
+## Docker Images
+* To view images
+```bash
+docker images
+```
+* To see image history
+```bash
+docker image history <<image_name>>
+```
+* To inspect an image
+```bash
+docker image inspect <<image_name>>
+```
