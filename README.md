@@ -128,3 +128,10 @@ docker image inspect <<image_name>>
 ```bash
  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 ```
+
+### Build Docker image
+To build a docker image create an image and save it as a Dockerfile
+
+```bash
+docker image build -t cusniginx .
+```
