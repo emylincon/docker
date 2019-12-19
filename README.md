@@ -1,4 +1,6 @@
 # Docker course
+To turn hyper v on
+* search `turn windows features on or off`
 
 ## Setup nginx docker
 * To pull nginx webserver and run it use following command
@@ -131,7 +133,71 @@ docker image inspect <<image_name>>
 
 ### Build Docker image
 To build a docker image create an image and save it as a Dockerfile
-
+* You can use the Dockerfile in the docker image alpine folder.
+* To build from that image, clone the repo and navigate to the folder 
+and then run the following command
 ```bash
 docker image build -t cusniginx .
 ```
+ #### sample format to build an image and copy a file in the folder into that image
+ 
+ ```Dockerfile
+FROM nginx:lastest
+# base image
+
+WORKIR /usr/share/nginx/html
+# change working directory 
+
+COPY index.html index.html
+# copy file without changing the name
+
+```
+* save the file as `Dcokerfile`
+* To build run `docker image build `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
